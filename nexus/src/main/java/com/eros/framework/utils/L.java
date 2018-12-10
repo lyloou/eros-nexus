@@ -1,6 +1,6 @@
 package com.eros.framework.utils;
 
-import android.support.v4.BuildConfig;
+import com.eros.BuildConfig;
 import android.util.Log;
 
 /**

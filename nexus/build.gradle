@@ -4,22 +4,23 @@ group = 'myliuyx'
 
 buildscript {
     repositories {
+        google()
         jcenter()
         mavenCentral()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath "com.android.tools.build:gradle:${GRADLE_TOOL_VERSION}"
     }
 }
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '26.0.2'
+    compileSdkVersion COMPILE_SDK_VERSION as int
+    buildToolsVersion "${BUILD_TOOLS_VERSION}"
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 25
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
         versionCode 1
         versionName "1.0"
 
@@ -37,7 +38,7 @@ android {
         abortOnError false
     }
 }
-def PROJECT_SUPPORTLIBV_NEXUS = "25.3.1"
+def PROJECT_SUPPORTLIBV_NEXUS = PROJECT_SUPPORTLIBVERSION
 
 dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
