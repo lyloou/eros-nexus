@@ -52,7 +52,7 @@ dependencies {
 //    implementation 'com.taobao.android:weex_sdk:0.18.0'
     implementation project(':sdk')
     implementation 'com.squareup.okhttp:okhttp-ws:2.3.0'
-    implementation 'com.squareup.okhttp3:okhttp:3.3.1'
+    implementation "com.squareup.okhttp3:okhttp:$OKHTTP3_VERSION"
 
     implementation files('libs/umeng-share-core-6.9.3.jar')
     implementation "com.tencent.mm.opensdk:wechat-sdk-android-without-mta:$WECHAT_VERSION"
